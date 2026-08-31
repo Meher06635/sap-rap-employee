@@ -1,0 +1,27 @@
+managed implementation in class Zclass_emp_09 unique;
+strict ( 2 );
+
+define behavior for Zdef_data_09 alias Employee
+persistent table zdata_table_09
+lock master
+authorization master ( instance )
+etag master ChangedAt
+{
+create;
+update;
+delete;
+
+field (readonly, numbering: managed) EmpUuid;
+
+mapping for zdata_table_09
+{
+EmpUuid = emp_uuid;
+EmpId = emp_id;
+EmpName = emp_name;
+Department = department;
+RoleTitle = role_title;
+Salary = salary;
+CreatedAt = created_at;
+ChangedAt = changed_at;
+}
+}

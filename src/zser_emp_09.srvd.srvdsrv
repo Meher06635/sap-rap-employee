@@ -1,0 +1,4 @@
+@EndUserText.label: 'Employee Management Service'
+define service ZSer_emp_09 {
+  expose Zdata_emp_2_09 as Employee;
+}

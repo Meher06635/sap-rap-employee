@@ -1,0 +1,75 @@
+@Metadata.layer: #CUSTOMER
+
+annotate entity Zdata_emp_2_09 with
+{
+
+  @UI.facet: [
+    {
+      id: 'EmployeeInfo',
+      purpose: #STANDARD,
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'Employee Details',
+      position: 10
+    }
+  ]
+
+  @UI: {
+    lineItem: [
+      { position: 10 }
+    ],
+    identification: [
+      { position: 10 }
+    ],
+    selectionField: [
+      { position: 10 }
+    ]
+  }
+  EmpId;
+
+  @UI: {
+    lineItem: [
+      { position: 20 }
+    ],
+    identification: [
+      { position: 20 }
+    ],
+    selectionField: [
+      { position: 20 }
+    ]
+  }
+  EmpName;
+
+  @UI: {
+    lineItem: [
+      { position: 30 }
+    ],
+    identification: [
+      { position: 30 }
+    ],
+    selectionField: [
+      { position: 30 }
+    ]
+  }
+  Department;
+
+  @UI: {
+    lineItem: [
+      { position: 40 }
+    ],
+    identification: [
+      { position: 40 }
+    ]
+  }
+  RoleTitle;
+
+  @UI: {
+    lineItem: [
+      { position: 50 }
+    ],
+    identification: [
+      { position: 50 }
+    ]
+  }
+  Salary;
+
+}
